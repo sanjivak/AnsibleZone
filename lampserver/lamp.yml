@@ -13,7 +13,7 @@
       name: "{{ item }}"
       state: present
     with_items: "{{ php_packages }}"
-    notify:
+     notify:
     - restart apache 
   - name:
     template:
@@ -22,7 +22,7 @@
     notify:
     - restart apache             
   handlers:
-  - name: restart apache
+    name: restart apache
     service:
       name: "{{ pack_name }}"
       state: restarted  
