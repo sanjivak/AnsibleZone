@@ -1,0 +1,9 @@
+[Ubuntu]
+localhost
+172.31.11.87
+
+[Redhat]
+172.31.3.221
+
+[webserver]
+localhost
